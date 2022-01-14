@@ -16,6 +16,8 @@ You will need to have the following installed on the host machine in order to us
 - Ansible-Builder
 - An account on a container registration service (quay.io or docker hub for example)
 
+The guide goes on the assumption that you have a basic understanding of `AWX-Operator` as well as `Ansible` and `Docker`.
+
 # Steps to build the image for hosting
 
 The following files need to be in the same folder
@@ -83,6 +85,8 @@ Under `Resources` and `Credentials`
 - Fill in `Username`
 - Fill in `Password`
 - `Save`
+
+**Add the new Execution Environment**
 
 Under `Administration` and `Execution Environments`
 - Select `Add`
