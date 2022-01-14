@@ -1,6 +1,12 @@
 # Ansible AWX-Operator Juniper Execution Environment
 
-This is a repo to build an Ansible Execution Environment that can communicate with Juniper devices using the juniper.junos roles as well as the juniper.devices collection.
+This is a repo to build an Ansible Execution Environment that can communicate with Juniper devices using the `juniper.junos` roles as well as the `juniper.devices` collection.
+
+it will work with the following `roles` or `collections` commands
+
+`juniper.junos`
+`Juniper.junos`
+`juniper.device`
 
 **Requirements**
 
