@@ -63,7 +63,7 @@ you can verify your `image` or the `name` by running
 docker images
 ```
 
-next you will need to upload the compiled image to Docker Hub. 
+next you will need to upload the compiled image to Docker Hub. change `giuffrelab` and the image name you chose to whatever you used
 
 ```
 docker push giuffrelab/awx-juniper-ee
@@ -99,6 +99,8 @@ Under `Resources` and `Credentials`
 - `Save`
 
 **Add the new Execution Environment**
+
+change `giuffrelab` and the image name you chose to whatever you used
 
 Under `Administration` and `Execution Environments`
 - Select `Add`
