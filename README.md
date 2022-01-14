@@ -55,9 +55,9 @@ ansible-builder build --tag giuffrelab/awx-juniper-ee -v 3
 
 **Upload the image to the container registry**
 
-You should now have a new folder called context containing a Dockerfile and a _build folder. You can ignore these for now. 
+You should now have a new folder called `context` containing a `Dockerfile` and a `_build` folder. You can ignore these for now. 
 
-you can verify your image or the name by running 
+you can verify your `image` or the `name` by running 
 
 ```
 docker images
@@ -70,6 +70,18 @@ docker push giuffrelab/awx-juniper-ee
 ```
 
 this will create your repo on your docker hub account for use
+
+**Cleanup**
+
+At this point if you want to remove all of this from your system run the following
+
+remove the images from Docker
+
+```
+docker system prune --all
+```
+
+you can then delete the repo folder
 
 # Using the new Execution Environment in AWX-Operator
 
