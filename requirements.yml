@@ -1,7 +1,6 @@
 ---
 collections:
   - name: juniper.device
-  - name: awx.awx
 
 roles:
   - name: juniper.junos
