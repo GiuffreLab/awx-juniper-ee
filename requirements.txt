@@ -1,6 +1,4 @@
-git+https://github.com/ansible/ansible-builder.git@devel#egg=ansible-builder
 ansible
 junos-eznc
 jxmlease
 jsnapy
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
