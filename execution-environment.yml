@@ -2,7 +2,7 @@
 version: 1
 
 build_arg_defaults:
-  EE_BASE_IMAGE: 'quay.io/ansible/ansible-runner:stable-2.10-devel'
+  EE_BASE_IMAGE: 'quay.io/ansible/ansible-runner:latest'
 
 dependencies:
   galaxy: requirements.yml
@@ -11,10 +11,6 @@ dependencies:
 
 additional_build_steps:
   prepend:
-    - RUN pip3 install --upgrade pip setuptools
-    - RUN whoami
-    - RUN cat /etc/os-release
+    - RUN /usr/bin/python3 -m pip install --upgrade pip
   append:
-    - RUN echo This is a post-install command!
-    - RUN ls -la /etc
     - RUN pip3 list installed
